@@ -1,0 +1,110 @@
+@import 'variables';
+@import 'mixin';
+
+// General styles
+* {
+    &, &:before,  &:after {
+        box-sizing: border-box;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font: {
+        family: 'Roboto', sans-serif;
+        style: normal;
+        weight: var(--normal);
+        size: var(--xs);
+    }
+    @include maxBlockWidth();
+}
+
+.container {
+    padding: 0 215px;
+}
+
+.header-wrapper {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    .header-logo {
+
+        .logo {
+            font: {
+                family: 'Raleway', sans-serif;
+                weight: var(----bold);
+                size: var(--l);
+            }
+            line-height: 1.19;
+            letter-spacing: 0.03em;
+            color: var(--secondary-color);
+
+            &_text {
+                color: var(--accent-color);
+            }
+        }
+   }
+
+    .header-nav-list {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+
+        a {
+            color: var(--primary-text-color);
+            
+            &:hover {
+                color: var(--accent-color);
+                border-bottom: var(--border-radius) solid var(--accent-color);
+            }
+        }
+    }
+
+    .header-contacts {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        
+        a {
+            color: var(--fourth-text-color);
+
+            &:hover {
+                color: var(--accent-color);
+            }
+        }
+
+        .contacts-link {
+            padding-left: 20px;
+            background: {
+                position: left center;
+                repeat: no-repeat;
+            }  
+            }
+
+        .header-mail-icon {
+            background-image: url('../images/header/envelope.png');
+        }
+
+        .header-tel-icon {
+            background-image: url('../images/header/smartphone.png');
+        }
+    }
+
+     .style {
+        font: {
+            weight: var(--medium);
+        }
+        line-height: 1.14;
+        @include letterSpacing;
+    }
+}

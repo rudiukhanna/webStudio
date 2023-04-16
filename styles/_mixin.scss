@@ -1,0 +1,13 @@
+@mixin maxBlockWidth() {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+@mixin pointerLink() {
+    cursor: pointer;
+}
+
+@mixin letterSpacing() {
+    letter-spacing: 0.02em;
+}
+

@@ -1,0 +1,103 @@
+:root {
+  --xs: 14px;
+  --s: 16px;
+  --m: 18px;
+  --l: 26px;
+  --xl: 36px;
+  --xxl: 44px;
+  --normal: 400;
+  --medium: 500;
+  --bold: 700;
+  --black: 900;
+  --primary-text-color: #212121;
+  --accent-color: #2196F3;
+  --secondary-color: #000000;
+  --tertiary-color: #FFFFFF;
+  --fourth-text-color: #757575;
+  --bcg-whatwedo-card-text: #2F303A;
+  --bcg-color: #F5F4FA;
+  --border-radius: 2px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: var(--normal);
+  font-size: var(--xs);
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.container {
+  padding: 0 215px;
+}
+
+.header-wrapper {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.header-wrapper .header-logo .logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: var(----bold);
+  font-size: var(--l);
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+.header-wrapper .header-logo .logo_text {
+  color: var(--accent-color);
+}
+.header-wrapper .header-nav-list {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.header-wrapper .header-nav-list a {
+  color: var(--primary-text-color);
+}
+.header-wrapper .header-nav-list a:hover {
+  color: var(--accent-color);
+  border-bottom: var(--border-radius) solid var(--accent-color);
+}
+.header-wrapper .header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header-wrapper .header-contacts a {
+  color: var(--fourth-text-color);
+}
+.header-wrapper .header-contacts a:hover {
+  color: var(--accent-color);
+}
+.header-wrapper .header-contacts .contacts-link {
+  padding-left: 20px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.header-wrapper .header-contacts .header-mail-icon {
+  background-image: url("../images/header/envelope.png");
+}
+.header-wrapper .header-contacts .header-tel-icon {
+  background-image: url("../images/header/smartphone.png");
+}
+.header-wrapper .style {
+  font-weight: var(--medium);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}/*# sourceMappingURL=styles.css.map */
