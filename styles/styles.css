@@ -16,6 +16,8 @@
   --fourth-text-color: #757575;
   --bcg-whatwedo-card-text: #2F303A;
   --bcg-color: #F5F4FA;
+  --hero-bcg-color: rgba(47, 48, 58, 0.4);
+  --btn-box-shadow: rgba(0, 0, 0, 0.15);
   --border-radius: 2px;
 }
 
@@ -71,8 +73,10 @@ body {
   color: var(--primary-text-color);
 }
 .header-wrapper .header-nav-list a:hover {
+  padding-bottom: 28px;
   color: var(--accent-color);
-  border-bottom: var(--border-radius) solid var(--accent-color);
+  border-bottom: 4px solid var(--accent-color);
+  border-radius: var(--border-radius);
 }
 .header-wrapper .header-contacts {
   display: flex;
@@ -85,19 +89,65 @@ body {
 .header-wrapper .header-contacts a:hover {
   color: var(--accent-color);
 }
-.header-wrapper .header-contacts .contacts-link {
-  padding-left: 20px;
-  background-position: left center;
-  background-repeat: no-repeat;
-}
-.header-wrapper .header-contacts .header-mail-icon {
-  background-image: url("../images/header/envelope.png");
-}
-.header-wrapper .header-contacts .header-tel-icon {
-  background-image: url("../images/header/smartphone.png");
-}
 .header-wrapper .style {
   font-weight: var(--medium);
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-hero {
+  padding: 200px 452px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.header-hero::before {
+  content: "";
+  background: url("../images/hero/bcg-hero.png") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.header-hero::after {
+  content: "";
+  background-color: var(--hero-bcg-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.header-hero_title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: var(--black);
+  size: var(--xxl);
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tertiary-color);
+}
+.header-hero .header-hero-btn {
+  display: flex;
+  justify-content: center;
+}
+.header-hero .header-hero-btn .btn {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: var(--s);
+  line-height: 1.8;
+  padding: 10px 32px;
+  min-width: 150px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px var(--btn-box-shadow);
+  color: var(--tertiary-color);
+  z-index: 1;
 }/*# sourceMappingURL=styles.css.map */

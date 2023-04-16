@@ -64,8 +64,10 @@ body {
             color: var(--primary-text-color);
             
             &:hover {
+                padding-bottom: 28px;
                 color: var(--accent-color);
-                border-bottom: var(--border-radius) solid var(--accent-color);
+                border-bottom: 4px solid var(--accent-color);
+                border-radius: var(--border-radius);
             }
         }
     }
@@ -82,22 +84,7 @@ body {
                 color: var(--accent-color);
             }
         }
-
-        .contacts-link {
-            padding-left: 20px;
-            background: {
-                position: left center;
-                repeat: no-repeat;
-            }  
-            }
-
-        .header-mail-icon {
-            background-image: url('../images/header/envelope.png');
-        }
-
-        .header-tel-icon {
-            background-image: url('../images/header/smartphone.png');
-        }
+        
     }
 
      .style {
@@ -107,4 +94,71 @@ body {
         line-height: 1.14;
         @include letterSpacing;
     }
+}
+
+.header-hero {
+    padding: 200px 452px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+      
+      
+      &::before {
+    
+        content: "";
+        background: url('../images/hero/bcg-hero.png') no-repeat center center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      
+      &::after {
+        content: "";
+        background-color: var(--hero-bcg-color);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      
+     &_title {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        margin-bottom: 30px;
+        font: {
+            weight: var(--black);
+        }
+        size: var(--xxl);
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--tertiary-color);
+     }
+
+     .header-hero-btn {
+        display: flex;
+        justify-content: center;
+
+     .btn {
+        position: relative;
+        display: inline-block;
+        height: 50px;
+        border-radius: 4px;
+        text-align: center;
+        font-size: var(--s);
+        line-height: 1.8;
+        padding: 10px 32px;
+        min-width: 150px;
+        background: var(--accent-color);
+        box-shadow: 0px 4px 4px var(--btn-box-shadow);
+        color: var(--tertiary-color);
+        z-index: 1;
+      }
+    }
+   
 }
