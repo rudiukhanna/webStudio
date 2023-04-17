@@ -184,8 +184,8 @@ body {
 }
 .features .features-card-wrapper {
   display: flex;
-  gap: 30px;
   align-items: center;
+  gap: 30px;
 }
 .features .features-card-wrapper .features-card {
   width: 270px;
@@ -221,4 +221,32 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--fourth-text-color);
+}
+
+.whatwedo {
+  padding-bottom: 94px;
+}
+.whatwedo .whatwedo-card-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.whatwedo .whatwedo-card-wrapper .whatwedo-card {
+  width: 370px;
+}
+.whatwedo .whatwedo-card-wrapper .whatwedo-card_img {
+  max-width: 370px;
+  height: 294px;
+}
+.whatwedo .whatwedo-card-wrapper .whatwedo-card .desktop {
+  background: url("../images/whatwedo/desktop.jpg") center center;
+  background-size: cover;
+}
+.whatwedo .whatwedo-card-wrapper .whatwedo-card .mobile {
+  background: url("../images/whatwedo/mobile.jpg") center center;
+  background-size: cover;
+}
+.whatwedo .whatwedo-card-wrapper .whatwedo-card .tablet {
+  background: url("../images/whatwedo/tablet.jpg") center center;
+  background-size: cover;
 }/*# sourceMappingURL=styles.css.map */

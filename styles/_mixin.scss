@@ -15,3 +15,7 @@
     margin-top: 94px;
     margin-bottom: 50px;
 }
+
+@mixin cardGap() {
+    gap: 30px;
+}

@@ -194,8 +194,8 @@ body {
 
     .features-card-wrapper {
         display: flex;
-        gap: 30px;
         align-items: center;
+        @include cardGap;
 
     .features-card {
         width: 270px;
@@ -251,6 +251,43 @@ body {
  }
 }
 
+
+.whatwedo {
+
+    padding-bottom: 94px;
+
+    .whatwedo-card-wrapper {
+        display: flex;
+        align-items: center;
+        @include cardGap;
+
+        .whatwedo-card {
+            width: 370px;
+
+         &_img {
+            max-width: 370px;
+            height: 294px;  
+         }
+           
+         .desktop {
+            background: url('../images/whatwedo/desktop.jpg') center center;
+            background-size: cover;
+         }
+
+         .mobile {
+            background: url('../images/whatwedo/mobile.jpg') center center;
+            background-size: cover;
+         }
+         
+         .tablet {
+            background: url('../images/whatwedo/tablet.jpg') center center;
+            background-size: cover;
+         }
+         
+     }
+
+    }
+}
 
    
 
