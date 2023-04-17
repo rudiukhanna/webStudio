@@ -42,7 +42,6 @@ h2 {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -181,7 +180,7 @@ body {
 }
 
 .features {
-  padding-top: 94px;
+  padding: 94px 0;
 }
 .features .features-card-wrapper {
   display: flex;
@@ -272,4 +271,65 @@ body {
 .whatwedo .whatwedo-card-wrapper .whatwedo-card-inner .whatwedo-card .tablet {
   background: url("../images/whatwedo/tablet.jpg") center center;
   background-size: cover;
+}
+
+.team {
+  padding: 94px 0;
+  background: var(--bcg-color);
+}
+.team .team-card-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.team .team-card-wrapper .team-card {
+  width: 270px;
+  background: var(--tertiary-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team .team-card-wrapper .team-card_img {
+  max-width: 270px;
+  height: 260px;
+}
+.team .team-card-wrapper .team-card .team-member-demianenko {
+  background: url("../images/team/demianenko.jpg") center center;
+  background-size: cover;
+}
+.team .team-card-wrapper .team-card .team-member-repina {
+  background: url("../images/team/repina.jpg") center center;
+  background-size: cover;
+}
+.team .team-card-wrapper .team-card .team-member-tarasov {
+  background: url("../images/team/tarasov.jpg") center center;
+  background-size: cover;
+}
+.team .team-card-wrapper .team-card .team-member-yermakov {
+  background: url("../images/team/yermakov.jpg") center center;
+  background-size: cover;
+}
+.team .team-card-wrapper .team-card_content > h3 {
+  margin: 0;
+  margin-top: 30px;
+  font-weight: var(--medium);
+  font-size: var(--s);
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.team .team-card-wrapper .team-card_content > p {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--fourth-text-color);
+  text-align: center;
+  text-transform: capitalize;
+}
+.team .team-card-wrapper .team-icon-wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */

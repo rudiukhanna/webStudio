@@ -12,10 +12,13 @@
 }
 
 @mixin spaceTitle() {
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 
 @mixin cardGap() {
     gap: 30px;
+}
+
+@mixin paddingSection {
+    padding: 94px 0;
 }
