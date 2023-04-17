@@ -30,6 +30,19 @@ body {
     padding: 0 215px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;     
+}
+
 .header-wrapper {
     padding: 25px 0;
     display: flex;
@@ -162,3 +175,68 @@ body {
     }
    
 }
+
+.features {
+    padding: 95px 0;
+
+    .features-card {
+        width: 270px;
+
+        &_img {
+            width: 270px;
+            height: 120px;
+            border-radius: var(--border-radius-4);
+        }
+
+            .features-antenna {
+                background: url('../images/features/antenna.png') no-repeat center,
+                            var(--bcg-color);
+            }
+            
+            .features-clock {
+                background: url('../images/features/clock.png') no-repeat center,
+                var(--bcg-color);
+            }
+
+            .features-diagram {
+                background: url('../images/features/diagram.png') no-repeat center,
+                var(--bcg-color);
+            }
+
+            .features-astronaut {
+                background: url('../images/features/astronaut.png') no-repeat center,
+                var(--bcg-color);
+            }
+
+
+        &_content {
+
+        & > h3 {
+            margin: 0;
+            margin-top: 30px;
+            font: {
+                weight: var(--bold);
+            }
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--primary-text-color);
+        }
+
+        & > p {
+            margin: 0;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            color: var(--fourth-text-color);
+        }
+        }
+    }
+
+
+       
+}
+    
+
+   
+
+

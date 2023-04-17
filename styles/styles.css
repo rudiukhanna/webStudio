@@ -18,7 +18,8 @@
   --bcg-color: #F5F4FA;
   --hero-bcg-color: rgba(47, 48, 58, 0.4);
   --btn-box-shadow: rgba(0, 0, 0, 0.15);
-  --border-radius: 2px;
+  --border-radius-2: 2px;
+  --border-radius-4: 4px;
 }
 
 *, *:before, *:after {
@@ -44,6 +45,20 @@ body {
 
 .container {
   padding: 0 215px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .header-wrapper {
@@ -150,4 +165,43 @@ body {
   box-shadow: 0px 4px 4px var(--btn-box-shadow);
   color: var(--tertiary-color);
   z-index: 1;
+}
+
+.features {
+  padding: 95px 0;
+}
+.features .features-card {
+  width: 270px;
+}
+.features .features-card_img {
+  width: 270px;
+  height: 120px;
+  border-radius: var(--border-radius-4);
+}
+.features .features-card .features-antenna {
+  background: url("../images/features/antenna.png") no-repeat center, var(--bcg-color);
+}
+.features .features-card .features-clock {
+  background: url("../images/features/clock.png") no-repeat center, var(--bcg-color);
+}
+.features .features-card .features-diagram {
+  background: url("../images/features/diagram.png") no-repeat center, var(--bcg-color);
+}
+.features .features-card .features-astronaut {
+  background: url("../images/features/astronaut.png") no-repeat center, var(--bcg-color);
+}
+.features .features-card_content > h3 {
+  margin: 0;
+  margin-top: 30px;
+  font-weight: var(--bold);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+.features .features-card_content > p {
+  margin: 0;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--fourth-text-color);
 }/*# sourceMappingURL=styles.css.map */
