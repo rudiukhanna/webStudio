@@ -261,14 +261,42 @@ body {
         align-items: center;
         @include cardGap;
 
-        .whatwedo-card {
+        .whatwedo-card-inner {
             width: 370px;
+            text-align: center;
+             
+
+        .whatwedo-card {
+            max-width: 370px;
+            position: relative;
+            margin-bottom: 15px;
+            
 
          &_img {
             max-width: 370px;
             height: 294px;  
+            display: block;
+             width: 100%;
+
+             .actions {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background: var(--card-bcg-color);
+
+                &_text {
+                    margin: 0;
+                    text-decoration: none;
+                    color: var(--tertiary-color);
+                    padding: 27px 0;
+                    text-transform: uppercase;
+                }
+             }
+            
          }
            
+
          .desktop {
             background: url('../images/whatwedo/desktop.jpg') center center;
             background-size: cover;
@@ -285,7 +313,7 @@ body {
          }
          
      }
-
+     }
     }
 }
 
