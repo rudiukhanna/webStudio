@@ -11,3 +11,7 @@
     letter-spacing: 0.02em;
 }
 
+@mixin spaceTitle() {
+    margin-top: 94px;
+    margin-bottom: 50px;
+}

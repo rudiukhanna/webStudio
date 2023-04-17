@@ -34,11 +34,23 @@ li {
   list-style-type: none;
 }
 
+h2 {
+  margin: 0;
+  font-weight: var(--bold);
+  font-size: var(--xl);
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: var(--normal);
   font-size: var(--xs);
+  color: var(--primary-text-color);
   margin: 0 auto;
   max-width: 1600px;
 }
@@ -168,39 +180,44 @@ body {
 }
 
 .features {
-  padding: 95px 0;
+  padding-top: 94px;
 }
-.features .features-card {
+.features .features-card-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.features .features-card-wrapper .features-card {
   width: 270px;
 }
-.features .features-card_img {
-  width: 270px;
+.features .features-card-wrapper .features-card_img {
+  max-width: 270px;
   height: 120px;
   border-radius: var(--border-radius-4);
 }
-.features .features-card .features-antenna {
+.features .features-card-wrapper .features-card .features-antenna {
   background: url("../images/features/antenna.png") no-repeat center, var(--bcg-color);
 }
-.features .features-card .features-clock {
+.features .features-card-wrapper .features-card .features-clock {
   background: url("../images/features/clock.png") no-repeat center, var(--bcg-color);
 }
-.features .features-card .features-diagram {
+.features .features-card-wrapper .features-card .features-diagram {
   background: url("../images/features/diagram.png") no-repeat center, var(--bcg-color);
 }
-.features .features-card .features-astronaut {
+.features .features-card-wrapper .features-card .features-astronaut {
   background: url("../images/features/astronaut.png") no-repeat center, var(--bcg-color);
 }
-.features .features-card_content > h3 {
+.features .features-card-wrapper .features-card_content > h3 {
   margin: 0;
   margin-top: 30px;
   font-weight: var(--bold);
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-text-color);
 }
-.features .features-card_content > p {
+.features .features-card-wrapper .features-card_content > p {
   margin: 0;
+  margin-top: 10px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--fourth-text-color);
