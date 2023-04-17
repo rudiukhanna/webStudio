@@ -19,6 +19,7 @@
   --hero-bcg-color: rgba(47, 48, 58, 0.4);
   --btn-box-shadow: rgba(0, 0, 0, 0.15);
   --card-bcg-color: rgba(47, 48, 58, 0.8);
+  --customers-card-border: #AFB1B8;
   --border-radius-2: 2px;
   --border-radius-4: 4px;
 }
@@ -332,4 +333,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.customers {
+  padding: 94px 0;
+}
+.customers .grid-customers-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+.customers .grid-customers-wrapper .customers-card {
+  max-width: 170px;
+  height: 92px;
+  border: 1px solid var(--customers-card-border);
+  border-radius: 4px;
+}
+.customers .grid-customers-wrapper .customers-card:hover {
+  cursor: pointer;
+  border: 1px solid var(--accent-color);
+}
+.customers .grid-customers-wrapper .customers-card > img {
+  margin-left: 15px;
+  margin-top: 15px;
 }/*# sourceMappingURL=styles.css.map */

@@ -393,3 +393,33 @@ body {
              }
          }
    }
+
+//    Customers
+  .customers {
+    @include paddingSection;
+
+    .grid-customers-wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 0px;
+
+        .customers-card {
+            max-width: 170px;
+            height: 92px;
+            border: 1px solid var(--customers-card-border);
+            border-radius: 4px;
+
+            &:hover {
+                @include pointerLink;
+                border: 1px solid var(--accent-color);
+            }
+
+            & > img {
+                margin-left: 15px;
+                margin-top: 15px;
+            }
+        }
+    }
+  }
