@@ -22,3 +22,7 @@
 @mixin paddingSection {
     padding: 94px 0;
 }
+
+@mixin footerContainer() {
+    padding: 60px 215px;
+}

@@ -74,14 +74,7 @@ body {
   overflow: hidden;
 }
 
-.header-wrapper {
-  padding: 25px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-}
-.header-wrapper .header-logo .logo {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: var(----bold);
   font-size: var(--l);
@@ -89,8 +82,19 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
-.header-wrapper .header-logo .logo_text {
+.logo_text {
   color: var(--accent-color);
+}
+.logo_footer {
+  color: var(--tertiary-color);
+}
+
+.header-wrapper {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 .header-wrapper .header-nav-list {
   display: flex;
@@ -334,6 +338,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.team .team-card-wrapper .team-icon-wrapper .team-icon-inst {
+  color: var(--fourth-text-color);
+}
 
 .customers {
   padding: 94px 0;
@@ -358,4 +365,11 @@ body {
 .customers .grid-customers-wrapper .customers-card > img {
   margin-left: 15px;
   margin-top: 15px;
+}
+
+.footer {
+  background-color: var(--bcg-whatwedo-card-text);
+}
+.footer_container {
+  padding: 60px 215px;
 }/*# sourceMappingURL=styles.css.map */

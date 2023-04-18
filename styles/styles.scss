@@ -56,6 +56,26 @@ body {
     overflow: hidden;     
 }
 
+.logo {
+    font: {
+        family: 'Raleway', sans-serif;
+        weight: var(----bold);
+        size: var(--l);
+    }
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+
+    &_text {
+        color: var(--accent-color);
+    }
+
+    &_footer {
+        color: var(--tertiary-color);
+    }
+}
+
+
 .header-wrapper {
     padding: 25px 0;
     display: flex;
@@ -63,23 +83,6 @@ body {
     align-items: center;
     height: 80px;
 
-    .header-logo {
-
-        .logo {
-            font: {
-                family: 'Raleway', sans-serif;
-                weight: var(----bold);
-                size: var(--l);
-            }
-            line-height: 1.19;
-            letter-spacing: 0.03em;
-            color: var(--secondary-color);
-
-            &_text {
-                color: var(--accent-color);
-            }
-        }
-   }
 
     .header-nav-list {
         display: flex;
@@ -130,7 +133,6 @@ body {
       
       
       &::before {
-    
         content: "";
         background: url('../images/hero/bcg-hero.png') no-repeat center center/cover;
         position: absolute;
@@ -390,6 +392,10 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                .team-icon-inst {
+                    color: var(--fourth-text-color);
+                }
              }
          }
    }
@@ -423,3 +429,13 @@ body {
         }
     }
   }
+
+//   Footer
+
+.footer {
+    background-color: var(--bcg-whatwedo-card-text);
+
+    &_container {
+        @include footerContainer;
+    }
+}
