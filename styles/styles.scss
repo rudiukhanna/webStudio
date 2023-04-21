@@ -438,4 +438,42 @@ body {
     &_container {
         @include footerContainer;
     }
+
+    &_content-wrapper {
+        display: flex;
+        gap: 75px;
+    }
+
+    &_content-address > ul {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    &_content-address > ul > li:nth-last-child(-n + 2) {
+        margin-top: 9px;
+    }
+
+    &_link {
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+    }
+
+    .address-link {
+        color: var(--tertiary-color);
+    }
+
+    .contacts-link {
+        color: var(--footer-contacts-link);
+    }
+
+    p {
+        color: var(--tertiary-color);
+        font: {
+            weight: var(--bold);
+        }
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
 }

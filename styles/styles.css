@@ -20,6 +20,7 @@
   --btn-box-shadow: rgba(0, 0, 0, 0.15);
   --card-bcg-color: rgba(47, 48, 58, 0.8);
   --customers-card-border: #AFB1B8;
+  --footer-contacts-link: rgba(255, 255, 255, 0.6);
   --border-radius-2: 2px;
   --border-radius-4: 4px;
 }
@@ -372,4 +373,32 @@ body {
 }
 .footer_container {
   padding: 60px 215px;
+}
+.footer_content-wrapper {
+  display: flex;
+  gap: 75px;
+}
+.footer_content-address > ul {
+  margin-top: 20px;
+  padding: 0;
+}
+.footer_content-address > ul > li:nth-last-child(-n+2) {
+  margin-top: 9px;
+}
+.footer_link {
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.footer .address-link {
+  color: var(--tertiary-color);
+}
+.footer .contacts-link {
+  color: var(--footer-contacts-link);
+}
+.footer p {
+  color: var(--tertiary-color);
+  font-weight: var(--bold);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }/*# sourceMappingURL=styles.css.map */
