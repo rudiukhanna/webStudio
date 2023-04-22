@@ -21,6 +21,7 @@
   --card-bcg-color: rgba(47, 48, 58, 0.8);
   --customers-card-border: #AFB1B8;
   --footer-contacts-link: rgba(255, 255, 255, 0.6);
+  --input-border: rgba(255, 255, 255, 0.3);
   --border-radius-2: 2px;
   --border-radius-4: 4px;
 }
@@ -396,9 +397,23 @@ body {
   color: var(--footer-contacts-link);
 }
 .footer p {
+  margin: 0;
   color: var(--tertiary-color);
   font-weight: var(--bold);
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.footer_form > input {
+  margin-top: 20px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  background-color: var(--bcg-whatwedo-card-text);
+  color: var(--footer-contacts-link);
+  padding-left: 16px;
+  font-size: var(--s);
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 }/*# sourceMappingURL=styles.css.map */
