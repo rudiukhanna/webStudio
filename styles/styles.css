@@ -340,8 +340,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-.team .team-card-wrapper .team-icon-wrapper .team-icon-inst {
-  color: var(--fourth-text-color);
+.team .team-card-wrapper .team-icon-wrapper svg:hover {
+  fill: var(--accent-color);
 }
 
 .customers {

@@ -393,9 +393,9 @@ body {
                 justify-content: center;
                 align-items: center;
 
-                .team-icon-inst {
-                    color: var(--fourth-text-color);
-                }
+             svg:hover {
+                fill: var(--accent-color);
+             }
              }
          }
    }
